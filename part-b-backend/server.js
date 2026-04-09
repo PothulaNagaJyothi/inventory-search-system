@@ -1,9 +1,13 @@
-const express = require('express');
 require('dotenv').config();
+const express = require('express');
+const cors = require('cors');
 const pool = require('./db');
 
 const app = express();
+
+app.use(cors());
 app.use(express.json());
+
 
 // Create supplier
 app.post('/supplier', async (req, res) => {
@@ -68,4 +72,8 @@ ORDER BY total_value DESC
   res.json(result.rows);
 });
 
-app.listen(4000, () => console.log("DB API running on port 4000"));
+const PORT = process.env.PORT || 4000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
+});

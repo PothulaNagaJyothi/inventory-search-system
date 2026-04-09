@@ -24,7 +24,7 @@ function App() {
     params.append("page", newPage);
     params.append("limit", 5);
 
-    const res = await fetch(`http://localhost:3000/search?${params}`);
+    const res = await fetch(`https://inventory-search-system-1-73ku.onrender.com/search?${params}`);
     const data = await res.json();
 
     if (data.error) {

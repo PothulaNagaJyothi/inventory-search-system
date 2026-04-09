@@ -4,6 +4,18 @@ A full-stack application that allows users to search surplus inventory across su
 
 ---
 
+## 🚀 Live Demo
+
+Frontend: https://inventory-search-system-blue.vercel.app/
+Search API: https://inventory-search-system-1-73ku.onrender.com/search
+Inventory API: https://inventory-search-system-s08c.onrender.com/inventory
+
+### Example Search
+
+https://inventory-search-system-1-73ku.onrender.com/search?q=laptop&category=electronics
+
+---
+
 ## Tech Stack
 
 * Backend: Node.js, Express
@@ -68,7 +80,7 @@ inventory-search-system/
 ### 1. Clone Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/PothulaNagaJyothi/inventory-search-system
 cd inventory-search-system
 ```
 
@@ -156,10 +168,10 @@ Example:
 ### Supplier APIs
 
 ```
-POST /supplier
-POST /inventory
-GET /inventory
-GET /inventory-by-supplier
+POST /supplier  
+POST /inventory  
+GET /inventory  
+GET /inventory-by-supplier  
 ```
 
 ---
@@ -234,7 +246,7 @@ PORT=3000
 
 ### CORS errors
 
-* Enable CORS in backend:
+Enable CORS in backend:
 
 ```js
 app.use(cors({ origin: '*' }));
@@ -248,4 +260,4 @@ app.use(cors({ origin: '*' }));
 
 ## Author
 
-Pothula Naga Jyothi
+**Pothula Naga Jyothi**

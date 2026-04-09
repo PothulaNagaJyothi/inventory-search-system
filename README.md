@@ -80,7 +80,7 @@ inventory-search-system/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/PothulaNagaJyothi/inventory-search-system
+git clone https://github.com/PothulaNagaJyothi/inventory-search-system.git
 cd inventory-search-system
 ```
 
